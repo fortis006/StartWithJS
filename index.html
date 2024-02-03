@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW"> <!--設定語言-->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烘培工坊</title>
+    <link rel="stylesheet" href="style.css">    <!--連接css-->
 </head>
 <body>
-    <div class="app">
-    <h1>備忘錄</h1>
-    <p>記事</p>
-    <input type="text" id="content"/>
-    <p>日期</p>
-    <input type="date" id="date"/>
-    <p>時間</p>
-    <input type="time" id="time"/>
-    <button class="add" id="addedBtn">新增</button>
-    <button class="remove" id="deletedBtn">刪除最後一個</button>
-    <div class="list" id="list">
-      <div class="item">
-        <div>
-          <p>內容：</p>
-          <p>時間：</p>
-        </div>
-      </div>
+    <header>    <!--包含首頁相關資訊-->
+    <button class="menu">&#9776;</button>
+    <h1>烘培工坊</h1>
+    <nav>   <!--放置導覽列及主選單-->
+    <ul>    <!--導覽列-->
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">會員專區</a></li>                
+    </ul>
+    </nav>  
+    </header>   
+    <main>  <!--網頁主要內容-->
+
+    <section class="news">  <!--區塊分組：news-->
+    <h2>健康穀物麵包新鮮出爐！</h2>
+    <p>亞麻的細語、葵花的微風，每一口都是自然的敘事</p>
+    <p><a href="#">瞭解更多</a></p>
+    </section>
+
+    <section class="slogan">    <!--區塊分組：slogan-->
+    <blockquote>" 嚴選天然食材，精湛匠心烘培，<br>讓幸福在每口麵包中的香氣中蔓延 "</blockquote> <!--引述他人文字-->
+    </section>
+    
+    <section class="shop">  <!--區塊分組：slogan-->
+    <img src="images/shop.png" alt="烘培工坊大安店">
+    <div class="info">  <!--劃分or組織html的元素-->    <!--分組：info-->
+    <h2>8月1日大安旗艦店隆重開張！</h2>
+    <p>享受花園庭院的悠閒時光，內用座位區美食相伴，<br>
+       即日起來店消費加 LINE 好友可獲精緻小點心，等您一同品味！</p>
     </div>
-  </div> 
-  <script src="./index2.js"></script>
+    </section>
+
+    <section class="product">   <!--區塊分組：product-->
+        <div>
+            <img src="images/p1.png" alt="巴黎風法國土司">
+            <h3>巴黎風法國土司</h3>
+            <p>外皮金黃酥脆，內質鬆軟<br>讓您體驗法式浪漫的味覺享受</p>
+        </div>
+        <div>
+            <img src="images/p2.png" alt="皇家奶油可頌麵包">
+            <h3>皇家奶油可頌麵包</h3>
+            <p>酥脆口感搭配奶油的濃郁香氣<br>品嘗簡單而純粹的美味</p>
+        </div>
+        <div>
+            <img src="images/p3.png" alt="健康營養全麥土司">
+            <h3>健康營養全麥土司</h3>
+            <p>全麥製成，口感柔韌紮實<br>天然養分健康首選</p>
+        </div>
+    </section>
+    <section class="newsletter">    <!--區塊分組：newsletter-->
+        <p>歡迎訂閱烘培工坊電子報，可不定期收到限定優惠喔！</p>
+        <form>
+            <input type="email" placeholder="請輸入您的 Email" required>
+            <button type="submit">送出</button>
+        </form>
+    </section>
+    </main>
+    <footer>    <!--頁尾-->
+        <p>Copyright © 2023 烘培工坊 All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
